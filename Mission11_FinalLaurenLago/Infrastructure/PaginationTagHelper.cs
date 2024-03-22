@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using Mission11_FinalLaurenLago.Models.ViewModels;
 
 namespace Mission11_FinalLaurenLago.Infrastructure
+// Define a custom tag helper to generate pagination controls
+
 {
     [HtmlTargetElement("div", Attributes = "page-model")]
     public class PaginationTagHelper:TagHelper
@@ -22,6 +24,7 @@ namespace Mission11_FinalLaurenLago.Infrastructure
         public ViewContext? ViewContext { get; set; }
         public string? PageAction { get; set; }
         public PaginationInfo PageModel { get; set; }
+        // Flags and CSS classes for styling pagination links
 
         public bool PageClassesEnabled { get; set; }
         public string PageClass { get; set; } = String.Empty;

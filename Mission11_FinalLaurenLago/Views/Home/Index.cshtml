@@ -4,6 +4,8 @@
 }
 
 @model ProjecstListViewModel
+<!-- Main heading of the webpage -->
+
 
     <h1> The Book Project </h1>
    
@@ -11,6 +13,7 @@
     {
         <partial name ="ProjectSummary" model="p" />
      }
+<!-- Pagination control for navigating through pages -->
 
 <div page-model="@Model.PaginationInfo" page-action="Index" 
 page-classes-enabled="true" page-class="btn"
